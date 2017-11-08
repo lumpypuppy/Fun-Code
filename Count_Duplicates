@@ -1,0 +1,23 @@
+function duplicateCount(text){
+  var count = 0;
+  
+  var duplicates = [];
+  
+  var string = text.replace(/ /g, "");
+  string = string.toLowerCase();
+  var array = string.split("");
+  
+  array.sort();
+  
+  for (i=0; i<array.length; i++){
+  count++;
+  
+  var elementValue = array[i];
+  if((array[i] == array[i+1]) && (duplicates.indexOf(array[i])===-1))
+  { 
+    duplicates.push(elementValue);
+  }
+  }
+  return duplicates.length;
+
+}
