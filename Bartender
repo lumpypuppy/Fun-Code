@@ -1,0 +1,22 @@
+function getDrinkByProfession(param = "anything else"){
+
+  var professional = param.toLowerCase();
+  
+  var refreshments = {
+  "jabroni": "Patron Tequila",
+  "school counselor":	"Anything with Alcohol",
+  "programmer":	"Hipster Craft Beer",
+  "bike gang member":	"Moonshine",
+  "politician":	"Your tax dollars",
+  "rapper":	"Cristal",
+  "anything else": "Beer"
+  } 
+    if(refreshments[professional]==null)
+    {
+      return "Beer";
+    }else
+    {
+      return refreshments[professional];
+      
+    }
+}
