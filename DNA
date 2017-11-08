@@ -1,0 +1,14 @@
+function DNAStrand(dna){
+  var str = dna;
+  var strToObj = {
+    T:"A",
+    A:"T",
+    C: "G",
+    G:"C"
+  };
+  
+  str = str.replace(/T|A|C|G/gi, function(matched){ return strToObj[matched]; });
+  return str;
+}
+
+DNAStrand("ATCGTAGCTAGCATCG");
