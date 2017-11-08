@@ -1,0 +1,6 @@
+function highAndLow(numbers){
+  var b = numbers.split(' ').map(Number);
+  var maxNumber = Math.max.apply(null, b);
+  var minNumber = Math.min.apply(null, b);
+  return maxNumber + " " + minNumber;
+}
