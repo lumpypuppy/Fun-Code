@@ -1,0 +1,6 @@
+function remove(s){
+  var exclamationPoints = s;
+  var exclamationPointsGone = exclamationPoints.replace(/!/gi, "");
+  exclamationPointsGone = exclamationPointsGone+"!";
+  return exclamationPointsGone;
+}
